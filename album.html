@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>宁尚义个人博客</title>
+
+		<link href="css/album.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+
+		<!--[if lt IE 9]>
+        <script src="js/modernizr.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/christmassnow.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('body').christmassnow({
+					snowflaketype: 23, // 1 to 25 types of flakes are available change the number from 1 to 25. each one contain different images.
+					snowflakesize: 2, //snowflakesize is 1 then it get the size of the image as random , if the snowflakesize is 2 means size of the image as custom
+					snowflakedirection: 1, // 1 means default no wind (top to bottom), 2 means random, 3 means left to right and 4 means  right to left
+					snownumberofflakes: 4, // number of flakes is user option
+					snowflakespeed: 10, // falling speed of flake 10 sec is default
+					flakeheightandwidth: 15 // if you are mention that option flakesize is 2 then this flakeheightandwidth should work values are in pixels 16*16.
+				});
+			});
+		function prom() {  
+        var name = prompt("请输入相册密码"); //将输入的内容赋给变量 name ，  
+  
+        //这里需要注意的是，prompt有两个参数，前面是提示的话，后面是当对话框出来后，在对话框里的默认值  
+        if (name=="#")//如果返回的有内容  
+        {  
+            alert("密码错误，请重新输入");
+        }  
+        else
+            alert("密码错误，请重新输入");
+    }  
+		</script>
+	</head>
+
+	<body>
+		<div class="drop"></div>
+		<header>
+			<a href="nsy.html"><img src="images/bg.png" /></a>
+			<p>要么读书,要么旅行,身体和灵魂总要有一个在路上......</p>
+		</header>
+		<div class="navswf">
+			<object id="customMenu" data="images/nav.swf" width="528" height="70" type="application/x-shockwave-flash"><param name="allowScriptAccess" value="always"><param name="allownetworking" value="all"><param name="allowFullScreen" value="true"><param name="wmode" value="transparent"><param name="menu" value="false"><param name="scale" value="noScale"><param name="salign" value="1"></object>
+			<nav id="nav">
+				<ul>
+					<li>
+						<a href="nsy.html">主页</a>
+					</li>
+					<li>
+						<a href="personalfile.html">个人档</a>
+					</li>
+					<li>
+						<a href="journal.html">日志</a>
+					</li>
+					<li>
+						<a href="saysomething.html">说说</a>
+					</li>
+					<li>
+						<a href="album.html">相册</a>
+					</li>
+					<li>
+						<a href="messageboard.html">留言板</a>
+					</li>
+					<li>
+						<a href="collection.html">收藏</a>
+					</li>
+				</ul>
+
+				<script src="js/silder.js"></script>
+				<!--获取当前页导航 高亮显示标题-->
+
+			</nav>
+		</div>
+		<article>
+			
+			<div class="blank"></div>
+			<div class="blog"><br />
+				<h2>我的相册</h2>
+				<div class="pho">
+					<ul>
+						<table width="900" height="500" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="width: 240px;background: #53a8bc;">
+									<li>
+										<a href="#pic01"><img src="images/xc_1.jpg" onclick="return prom()"></a>
+									</li>
+								</td>
+								<td width="20"></td>
+								<td style="width: 240px;background: #53a8bc;">
+									<li>
+										<a href="#pic01"><img src="images/xc_2.jpg" onclick="return prom()"></a>
+									</li>
+								</td>
+								<td width="20"></td>
+								<td style="width: 240px;background: #53a8bc;">
+									<li>
+										<a href="#pic02"><img src="images/xc_3.jpg" onclick="return prom()"></a>
+									</li>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;background: #53a8bc;">小时候的照片</td>
+								<td width="20"></td>
+								<td style="text-align: center;background: #53a8bc;">1</td>
+								<td width="20"></td>
+								<td style="text-align: center;background: #53a8bc;">2</td>
+							</tr>
+							<tr height="20">
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td style="width: 240px;background: #53a8bc;">
+									<li>
+										<a href="#pic01"><img src="images/xc_4.jpg" onclick="return prom()"></a>
+									</li>
+								</td>
+								<td width="20"></td>
+								<td style="width: 240px;background: #53a8bc;">
+									<li>
+										<a href="#pic01"><img src="images/xc_5.jpg" onclick="return prom()"></a>
+									</li>
+								</td>
+								<td width="20"></td>
+								<td style="width: 240px;background: #53a8bc;">
+									<li>
+										<a href="#pic02"><img src="images/xc_6.jpg" onclick="return prom()"></a>
+									</li>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;background: #53a8bc;">3</td>
+								<td width="20"></td>
+								<td style="text-align: center;background: #53a8bc;">4</td>
+								<td width="20"></td>
+								<td style="text-align: center;background: #53a8bc;">5</td>
+							</tr>
+						</table>
+					</ul>
+			 	</div>
+			</div>
+		</article>
+		<footer id="copright">Design by NingShangYi</footer>
+	</body>
+
+</html>
